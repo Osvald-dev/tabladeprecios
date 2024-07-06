@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Construcción</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Tabla de precios constructivos</h1>
+        <form id="calculadoraForm">
+            <div class="input-group">
+                <label for="metrosCubiertos">Metros Cubiertos:</label>
+                <input type="number" id="metrosCubiertos" name="metrosCubiertos">
+            </div>
+            <div class="input-group">
+                <label for="metrosGaleria">Metros de Galería:</label>
+                <input type="number" id="metrosGaleria" name="metrosGaleria">
+            </div>
+            <div class="input-group">
+                <label for="metrosPergola">Metros de Pérgola:</label>
+                <input type="number" id="metrosPergola" name="metrosPergola">
+            </div>
+            <button type="button" onclick="calcular()">Calcular</button>
+        </form>
+
+        <div id="resultados">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Tipo</th>
+                        <th>Standard</th>
+                        <th>Premium</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Obra Gris</td>
+                        <td id="resultadoObraGrisStandard"></td>
+                        <td id="resultadoObraGrisPremium"></td>
+                    </tr>
+                    <tr class="ecap-row">
+                        <td>Obra Gris con ECAP</td>
+                        <td id="resultadoObraGrisECAPStandard"></td>
+                        <td id="resultadoObraGrisECAPPremium"></td>
+                    </tr>
+                    <tr>
+                        <td>Llave en Mano</td>
+                        <td id="resultadoLlaveEnManoStandard"></td>
+                        <td id="resultadoLlaveEnManoPremium"></td>
+                    </tr>
+                    <tr class="ecap-row">
+                        <td>Llave en Mano con ECAP</td>
+                        <td id="resultadoLlaveEnManoECAPStandard"></td>
+                        <td id="resultadoLlaveEnManoECAPPremium"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
