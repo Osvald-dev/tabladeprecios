@@ -5,10 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculadora de Construcción</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 <body>
+    <div class="theme-toggle">
+        <button id="themeButton" onclick="toggleTheme()">
+            <i class="fas fa-sun" id="themeIcon"></i>
+        </button>
+    </div>
     <div class="container">
-        <h1>Tabla de precios constructivos</h1>
+        <h1>Calculadora de Construcción</h1>
         <form id="calculadoraForm">
             <div class="input-group">
                 <label for="metrosCubiertos">Metros Cubiertos:</label>
@@ -25,7 +31,7 @@
             <button type="button" onclick="calcular()">Calcular</button>
         </form>
 
-        <div id="resultados">
+        <div class="table-container">
             <table>
                 <thead>
                     <tr>
@@ -59,6 +65,8 @@
             </table>
         </div>
     </div>
+
+    
 
     <script src="scripts.js"></script>
 </body>
