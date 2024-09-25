@@ -3,23 +3,23 @@ function calcular() {
     var metrosGaleria = parseFloat(document.getElementById("metrosGaleria").value) || 0;
     var metrosPergola = parseFloat(document.getElementById("metrosPergola").value) || 0;
 
-    var obraGrisStandard = metrosCubiertos * 266805 + metrosPergola * 105000 + metrosGaleria * 194040;
-    var obraGrisPremium = metrosCubiertos * 323400 + metrosPergola * 105000 + metrosGaleria * 194040;
+    var obraGrisStandard = metrosCubiertos * 300000 + metrosPergola * 105000 + metrosGaleria * 190000;
+    var obraGrisPremium = metrosCubiertos * 370000 + metrosPergola * 105000 + metrosGaleria * 190000;
 
-    var obraGrisECAPStandard = obraGrisStandard + metrosCubiertos * 52500;
-    var obraGrisECAPPremium = obraGrisPremium + metrosCubiertos * 52500;
+    var obraGrisECAPStandard = obraGrisStandard + metrosCubiertos * 70000;
+    var obraGrisECAPPremium = obraGrisPremium + metrosCubiertos * 50000;
 
-    var llaveEnManoStandard = metrosCubiertos * 450450 + metrosPergola * 190575 + metrosGaleria * 315315;
-    var llaveEnManoPremium = metrosCubiertos * 531300 + metrosPergola * 190575 + metrosGaleria * 315315;
+    var llaveEnManoStandard = metrosCubiertos * 500000 + metrosPergola * 190000 + metrosGaleria * 310000;
+    var llaveEnManoPremium = metrosCubiertos * 600000 + metrosPergola * 190000 + metrosGaleria * 310000;
 
-    var llaveEnManoECAPStandard = llaveEnManoStandard + metrosCubiertos * 52500;
-    var llaveEnManoECAPPremium = llaveEnManoPremium + metrosCubiertos * 52500;
+    var llaveEnManoECAPStandard = llaveEnManoStandard + metrosCubiertos * 70000;
+    var llaveEnManoECAPPremium = llaveEnManoPremium + metrosCubiertos * 50000;
 
-    var duplex = metrosCubiertos * 400000 + metrosPergola * 105000 + metrosGaleria * 194040;
-    var duplexLlaveEnMano = metrosCubiertos * 650000 + metrosPergola * 190575 + metrosGaleria * 315315;
+    var duplex = metrosCubiertos * 450000 + metrosPergola * 105000 + metrosGaleria * 190000;
+    var duplexLlaveEnMano = metrosCubiertos * 650000 + metrosPergola * 105000 + metrosGaleria * 310000;
 
-    var duplexECAP = duplex + metrosCubiertos * 52500;
-    var duplexLlaveEnManoECAP = duplexLlaveEnMano + metrosCubiertos * 52500;
+    var duplexECAP = duplex + metrosCubiertos * 50000;
+    var duplexLlaveEnManoECAP = duplexLlaveEnMano + metrosCubiertos * 50000;
 
     document.getElementById("resultadoObraGrisStandard").innerText = obraGrisStandard.toLocaleString('es-ES');
     document.getElementById("resultadoObraGrisPremium").innerText = obraGrisPremium.toLocaleString('es-ES');
