@@ -16,7 +16,7 @@ function calcular() {
     var llaveEnManoECAPPremium = llaveEnManoPremium + metrosCubiertos * 50000;
 
     var duplex = metrosCubiertos * 450000 + metrosPergola * 105000 + metrosGaleria * 190000;
-    var duplexLlaveEnMano = metrosCubiertos * 650000 + metrosPergola * 105000 + metrosGaleria * 310000;
+    var duplexLlaveEnMano = metrosCubiertos * 650000 + metrosPergola * 190000 + metrosGaleria * 310000;
 
     var duplexECAP = duplex + metrosCubiertos * 50000;
     var duplexLlaveEnManoECAP = duplexLlaveEnMano + metrosCubiertos * 50000;
