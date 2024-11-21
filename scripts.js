@@ -3,22 +3,22 @@ function calcular() {
     var metrosGaleria = parseFloat(document.getElementById("metrosGaleria").value) || 0;
     var metrosPergola = parseFloat(document.getElementById("metrosPergola").value) || 0;
 
-    var obraGrisStandard = metrosCubiertos * 300000 + metrosPergola * 105000 + metrosGaleria * 190000;
-    var obraGrisPremium = metrosCubiertos * 370000 + metrosPergola * 105000 + metrosGaleria * 190000;
+    var obraGrisStandard = metrosCubiertos * 350000 + metrosPergola * 105000 + metrosGaleria * 190000;
+    var obraGrisPremium = metrosCubiertos * 420000 + metrosPergola * 105000 + metrosGaleria * 190000;
 
     var obraGrisECAPStandard = obraGrisStandard + metrosCubiertos * 70000;
-    var obraGrisECAPPremium = obraGrisPremium + metrosCubiertos * 50000;
+    var obraGrisECAPPremium = obraGrisPremium + metrosCubiertos * 80000;
 
-    var llaveEnManoStandard = metrosCubiertos * 500000 + metrosPergola * 190000 + metrosGaleria * 310000;
-    var llaveEnManoPremium = metrosCubiertos * 600000 + metrosPergola * 190000 + metrosGaleria * 310000;
+    var llaveEnManoStandard = metrosCubiertos * 650000 + metrosPergola * 190000 + metrosGaleria * 310000;
+    var llaveEnManoPremium = metrosCubiertos * 750000 + metrosPergola * 190000 + metrosGaleria * 310000;
 
-    var llaveEnManoECAPStandard = llaveEnManoStandard + metrosCubiertos * 70000;
+    var llaveEnManoECAPStandard = llaveEnManoStandard + metrosCubiertos * 50000;
     var llaveEnManoECAPPremium = llaveEnManoPremium + metrosCubiertos * 50000;
 
-    var duplex = metrosCubiertos * 450000 + metrosPergola * 105000 + metrosGaleria * 190000;
-    var duplexLlaveEnMano = metrosCubiertos * 650000 + metrosPergola * 190000 + metrosGaleria * 310000;
+    var duplex = metrosCubiertos * 420000 + metrosPergola * 105000 + metrosGaleria * 190000;
+    var duplexLlaveEnMano = metrosCubiertos * 750000 + metrosPergola * 190000 + metrosGaleria * 310000;
 
-    var duplexECAP = duplex + metrosCubiertos * 50000;
+    var duplexECAP = duplex + metrosCubiertos * 80000;
     var duplexLlaveEnManoECAP = duplexLlaveEnMano + metrosCubiertos * 50000;
 
     document.getElementById("resultadoObraGrisStandard").innerText = obraGrisStandard.toLocaleString('es-ES');
