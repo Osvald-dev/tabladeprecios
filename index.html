@@ -31,42 +31,29 @@
             <button type="button" onclick="calcular()">Calcular</button>
         </form>
 
-        <!-- Primera tabla -->
+        <!-- Tabla para Obra Gris y Llave en Mano -->
         <div class="table-container">
             <table>
                 <thead>
                     <tr>
                         <th>Tipo</th>
-                        <th>Standard</th>
-                        <th>Premium</th>
+                        <th>Valor</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
                         <td>Obra Gris</td>
-                        <td id="resultadoObraGrisStandard"></td>
-                        <td id="resultadoObraGrisPremium"></td>
-                    </tr>
-                    <tr class="ecap-row">
-                        <td>Obra Gris con ECAP</td>
-                        <td id="resultadoObraGrisECAPStandard"></td>
-                        <td id="resultadoObraGrisECAPPremium"></td>
+                        <td id="resultadoObraGris"></td>
                     </tr>
                     <tr>
                         <td>Llave en Mano</td>
-                        <td id="resultadoLlaveEnManoStandard"></td>
-                        <td id="resultadoLlaveEnManoPremium"></td>
-                    </tr>
-                    <tr class="ecap-row">
-                        <td>Llave en Mano con ECAP</td>
-                        <td id="resultadoLlaveEnManoECAPStandard"></td>
-                        <td id="resultadoLlaveEnManoECAPPremium"></td>
+                        <td id="resultadoLlaveEnMano"></td>
                     </tr>
                 </tbody>
             </table>
         </div>
 
-        <!-- Segunda tabla para Duplex -->
+        <!-- Tabla para Duplex -->
         <div class="table-container">
             <table>
                 <thead>
@@ -80,17 +67,9 @@
                         <td>Duplex (Obra Gris)</td>
                         <td id="resultadoDuplex"></td>
                     </tr>
-                    <tr class="ecap-row">
-                        <td>Duplex con ECAP (Obra Gris)</td>
-                        <td id="resultadoDuplexECAP"></td>
-                    </tr>
                     <tr>
                         <td>Duplex (Llave en Mano)</td>
                         <td id="resultadoDuplexLlaveEnMano"></td>
-                    </tr>
-                    <tr class="ecap-row">
-                        <td>Duplex con ECAP (Llave en Mano)</td>
-                        <td id="resultadoDuplexLlaveEnManoECAP"></td>
                     </tr>
                 </tbody>
             </table>
