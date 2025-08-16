@@ -3,11 +3,11 @@ function calcular() {
     var metrosGaleria = parseFloat(document.getElementById("metrosGaleria").value) || 0;
     var metrosPergola = parseFloat(document.getElementById("metrosPergola").value) || 0;
 
-    var obraGris = metrosCubiertos * 400000 + metrosPergola * 120000 + metrosGaleria * 250000;
-    var llaveEnMano = metrosCubiertos * 700000 + metrosPergola * 250000 + metrosGaleria * 400000;
+    var obraGris = metrosCubiertos * 450000 + metrosPergola * 120000 + metrosGaleria * 250000;
+    var llaveEnMano = metrosCubiertos * 750000 + metrosPergola * 250000 + metrosGaleria * 400000;
 
-    var duplex = metrosCubiertos * 420000 + metrosPergola * 120000 + metrosGaleria * 250000;
-    var duplexLlaveEnMano = metrosCubiertos * 750000 + metrosPergola * 250000 + metrosGaleria * 400000;
+    var duplex = metrosCubiertos * 470000 + metrosPergola * 120000 + metrosGaleria * 250000;
+    var duplexLlaveEnMano = metrosCubiertos * 800000 + metrosPergola * 250000 + metrosGaleria * 400000;
 
     document.getElementById("resultadoObraGris").innerText = obraGris.toLocaleString('es-ES');
     document.getElementById("resultadoLlaveEnMano").innerText = llaveEnMano.toLocaleString('es-ES');
