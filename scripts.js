@@ -4,7 +4,7 @@ function calcular() {
     var metrosPergola = parseFloat(document.getElementById("metrosPergola").value) || 0;
 
     var obraGris = metrosCubiertos * 500000 + metrosPergola * 120000 + metrosGaleria * 250000;
-    var llaveEnMano = metrosCubiertos * 800000 + metrosPergola * 250000 + metrosGaleria * 450000;
+    var llaveEnMano = metrosCubiertos * 900000 + metrosPergola * 250000 + metrosGaleria * 450000;
 
     var duplex = metrosCubiertos * 550000 + metrosPergola * 120000 + metrosGaleria * 250000;
     var duplexLlaveEnMano = metrosCubiertos * 900000 + metrosPergola * 250000 + metrosGaleria * 400000;
