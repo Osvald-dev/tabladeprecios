@@ -1,146 +1,320 @@
-/* Estilos generales */
+/* RESET */
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body {
-    font-family: 'Montserrat', sans-serif;
-    background-color: var(--background-color);
-    color: var(--text-color);
-    transition: background-color 0.3s, color 0.3s;
-    padding: 20px;
-    display: flex;
-    justify-content: center;
-}
+
+/* VARIABLES */
 
 :root {
-    --background-color: #f4f4f4;
-    --text-color: #333;
+    --background-color: #f4f6f8;
+    --text-color: #2c2c2c;
+
     --primary-color: #004080;
     --secondary-color: #007bff;
-    --input-background-color: #fff;
-    --input-border-color: #ccc;
+
+    --card-color: #ffffff;
+
+    --input-background-color: #ffffff;
+    --input-border-color: #dcdcdc;
+
     --button-background-color: var(--primary-color);
     --button-hover-background-color: var(--secondary-color);
+
     --table-header-background-color: var(--primary-color);
-    --table-border-color: #ddd;
-    --ecap-background-color: #e0f7fa;
-    --shadow-color: rgba(0, 0, 0, 0.1);
+    --table-border-color: #e5e5e5;
+
+    --ecap-background-color: #eef6ff;
+
+    --shadow-color: rgba(0,0,0,0.08);
 }
+
+
+/* DARK MODE */
 
 [data-theme="dark"] {
     --background-color: #121212;
-    --text-color: #ffffff;
-    --input-background-color: #2c2c2c;
-    --input-border-color: #444;
+    --text-color: #e4e4e4;
+
+    --card-color: #1e1e1e;
+
+    --input-background-color: #2a2a2a;
+    --input-border-color: #3a3a3a;
+
     --button-background-color: #4a90e2;
     --button-hover-background-color: #357ab8;
-    --table-header-background-color: #1e1e1e;
-    --table-border-color: #333;
-    --ecap-background-color: #004d40;
+
+    --table-header-background-color: #2a2a2a;
+    --table-border-color: #3a3a3a;
+
+    --ecap-background-color: #243447;
 }
 
-.container {
-    max-width: 700px;
+
+/* BODY */
+
+body {
+    font-family: 'Montserrat', sans-serif;
     background: var(--background-color);
-    padding: 30px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px var(--shadow-color);
-    transition: background-color 0.3s;
+    color: var(--text-color);
+
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+
+    padding: 20px;
+
+    transition: background 0.3s, color 0.3s;
 }
+
+
+/* CONTAINER */
+
+.container {
+
+    width: 100%;
+    max-width: 720px;
+
+    background: var(--card-color);
+
+    padding: 28px;
+
+    border-radius: 14px;
+
+    box-shadow: 0 10px 25px var(--shadow-color);
+
+    transition: all 0.3s ease;
+}
+
+
+/* TITULO */
 
 h1 {
     text-align: center;
-    color: var(--text-color);
-    margin-bottom: 20px;
+    margin-bottom: 25px;
+    font-size: 26px;
     font-weight: 700;
 }
 
+
+/* INPUT GROUP */
+
 .input-group {
-    margin-bottom: 15px;
+    margin-bottom: 18px;
 }
 
 label {
     display: block;
+    font-size: 14px;
     font-weight: 600;
-    color: var(--text-color);
-    margin-bottom: 5px;
+    margin-bottom: 6px;
 }
+
+
+/* INPUTS */
 
 input[type="number"] {
+
     width: 100%;
-    padding: 12px;
+
+    padding: 14px;
+
+    border-radius: 8px;
+
     border: 1px solid var(--input-border-color);
-    border-radius: 5px;
-    background-color: var(--input-background-color);
+
+    background: var(--input-background-color);
+
     color: var(--text-color);
-    transition: 0.3s;
+
+    font-size: 16px;
+
+    transition: all 0.2s ease;
 }
 
+input:focus {
+
+    outline: none;
+
+    border-color: var(--primary-color);
+
+    box-shadow: 0 0 0 2px rgba(0,123,255,0.15);
+
+}
+
+
+/* BOTON */
+
 button {
+
     width: 100%;
-    padding: 12px;
-    background-color: var(--button-background-color);
-    color: #ffffff;
+
+    padding: 14px;
+
+    border-radius: 8px;
+
     border: none;
-    border-radius: 5px;
-    cursor: pointer;
+
+    background: var(--button-background-color);
+
+    color: white;
+
+    font-weight: 700;
+
     font-size: 16px;
-    font-weight: bold;
-    transition: background-color 0.3s, transform 0.2s;
+
+    cursor: pointer;
+
+    margin-top: 10px;
+
+    transition: all 0.2s ease;
 }
 
 button:hover {
-    background-color: var(--button-hover-background-color);
-    transform: scale(1.05);
+
+    background: var(--button-hover-background-color);
+
+    transform: translateY(-2px);
+
 }
 
+
+/* TABLA */
+
 .table-container {
-    margin-top: 20px;
+
+    margin-top: 25px;
+
     overflow-x: auto;
+
 }
 
 table {
-    width: 100%;
-    border-collapse: collapse;
-    border-radius: 5px;
-    overflow: hidden;
-    box-shadow: 0 2px 4px var(--shadow-color);
-}
 
-th, td {
-    padding: 14px;
-    border: 1px solid var(--table-border-color);
-    text-align: center;
+    width: 100%;
+
+    border-collapse: collapse;
+
+    font-size: 14px;
+
+    border-radius: 8px;
+
+    overflow: hidden;
+
 }
 
 th {
-    background-color: var(--table-header-background-color);
-    color: #ffffff;
-    font-weight: 700;
+
+    background: var(--table-header-background-color);
+
+    color: white;
+
+    font-weight: 600;
+
+    padding: 12px;
+
 }
+
+td {
+
+    padding: 12px;
+
+    border-bottom: 1px solid var(--table-border-color);
+
+    text-align: center;
+
+}
+
+
+/* FILA DESTACADA */
 
 .ecap-row {
-    background-color: var(--ecap-background-color);
-    font-weight: bold;
+
+    background: var(--ecap-background-color);
+
+    font-weight: 700;
+
 }
 
+
+/* DARK MODE BUTTON */
+
 .theme-toggle {
-    text-align: center;
-    margin-bottom: 15px;
+
+    position: fixed;
+
+    bottom: 20px;
+    right: 20px;
+
+    z-index: 999;
+
 }
 
 .theme-toggle button {
-    background: none;
+
+    width: 50px;
+    height: 50px;
+
+    border-radius: 50%;
+
     border: none;
+
+    background: var(--primary-color);
+
+    color: white;
+
+    font-size: 20px;
+
     cursor: pointer;
-    font-size: 24px;
-    color: var(--button-background-color);
-    transition: color 0.3s;
+
+    box-shadow: 0 6px 18px rgba(0,0,0,0.25);
+
+    transition: all 0.2s ease;
+
 }
 
 .theme-toggle button:hover {
-    color: var(--button-hover-background-color);
+
+    transform: scale(1.08);
+
+    background: var(--secondary-color);
+
+}
+
+
+/* MOBILE */
+
+@media (max-width: 600px) {
+
+    body {
+        padding: 10px;
+    }
+
+    .container {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 22px;
+    }
+
+    input {
+        font-size: 15px;
+        padding: 12px;
+    }
+
+    button {
+        font-size: 15px;
+        padding: 12px;
+    }
+
+    table {
+        font-size: 13px;
+    }
+
 }
