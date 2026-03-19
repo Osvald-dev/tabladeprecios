@@ -7,13 +7,13 @@ const precios = {
     woodframe: {
         obraGris: {
             cubiertos: 550000,
-            galeria: 250000,
+            galeria: 170000,
             pergola: 120000
         },
         llave: {
-            cubiertos: 1100000,
-            galeria: 500000,
-            pergola: 350000
+            cubiertos: 800000,
+            galeria: 350000,
+            pergola: 200000
         }
     },
 
@@ -32,14 +32,14 @@ const precios = {
 
     prefabricado: {
         obraGris: {
-            cubiertos: 400000,
-            galeria: 200000,
+            cubiertos: 350000,
+            galeria: 170000,
             pergola: 120000
         },
         llave: {
-            cubiertos: 900000,
-            galeria: 400000,
-            pergola: 250000
+            cubiertos: 600000,
+            galeria: 350000,
+            pergola: 200000
         }
     }
 
