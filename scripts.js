@@ -11,7 +11,7 @@ const precios = {
             pergola: 120000
         },
         llave: {
-            cubiertos: 800000,
+            cubiertos: 950000,
             galeria: 350000,
             pergola: 200000
         }
@@ -19,7 +19,7 @@ const precios = {
 
     duplex: {
         obraGris: {
-            cubiertos: 650000,
+            cubiertos: 850000,
             galeria: 450000,
             pergola: 350000
         },
@@ -37,7 +37,7 @@ const precios = {
             pergola: 120000
         },
         llave: {
-            cubiertos: 600000,
+            cubiertos: 750000,
             galeria: 350000,
             pergola: 200000
         }
