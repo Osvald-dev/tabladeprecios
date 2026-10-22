@@ -32,12 +32,12 @@ const precios = {
 
     prefabricado: {
         obraGris: {
-            cubiertos: 350000,
+            cubiertos: 450000,
             galeria: 170000,
             pergola: 120000
         },
         llave: {
-            cubiertos: 750000,
+            cubiertos: 850000,
             galeria: 350000,
             pergola: 200000
         }
