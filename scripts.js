@@ -7,39 +7,39 @@ const precios = {
     woodframe: {
         obraGris: {
             cubiertos: 583000,
-            galeria: 180200,
-            pergola: 127200
+            galeria: 250000,
+            pergola: 180000
         },
         llave: {
             cubiertos: 1007000,
-            galeria: 371000,
-            pergola: 212000
+            galeria: 550000,
+            pergola: 350000
         }
     },
 
     duplex: {
         obraGris: {
             cubiertos: 901000,
-            galeria: 477000,
-            pergola: 371000
+            galeria: 250000,
+            pergola: 180000
         },
         llave: {
             cubiertos: 1272000,
-            galeria: 530000,
-            pergola: 371000
+            galeria: 550000,
+            pergola: 350000
         }
     },
 
     prefabricado: {
         obraGris: {
-            cubiertos: 477000,
-            galeria: 180200,
-            pergola: 127200
+            cubiertos: 450000,
+            galeria: 200000,
+            pergola: 120000
         },
         llave: {
             cubiertos: 901000,
-            galeria: 371000,
-            pergola: 212000
+            galeria: 400000,
+            pergola: 300000
         }
     }
 

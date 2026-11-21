@@ -2,28 +2,28 @@ PRECIOS SMARTPANEL - ACTUALIZACION +6% (20/11/2026)
 Precio por m2 (anterior -> actualizado)
 
 === WOODFRAME ===
-woodframe.obraGris.cubiertos: $550.000 -> $583.000
-woodframe.obraGris.galeria: $170.000 -> $180.200
-woodframe.obraGris.pergola: $120.000 -> $127.200
+woodframe.obraGris.cubiertos:$583.000
+woodframe.obraGris.galeria: $250.000
+woodframe.obraGris.pergola: $180.000
 
-woodframe.llave.cubiertos: $950.000 -> $1.007.000
-woodframe.llave.galeria: $350.000 -> $371.000
-woodframe.llave.pergola: $200.000 -> $212.000
+woodframe.llave.cubiertos:  $1.007.000
+woodframe.llave.galeria: $550.000
+woodframe.llave.pergola: $350.000
 
 === DUPLEX ===
-duplex.obraGris.cubiertos: $850.000 -> $901.000
-duplex.obraGris.galeria: $450.000 -> $477.000
-duplex.obraGris.pergola: $350.000 -> $371.000
+duplex.obraGris.cubiertos: $901.000
+duplex.obraGris.galeria: $250.000
+duplex.obraGris.pergola: $180.000
 
-duplex.llave.cubiertos: $1.200.000 -> $1.272.000
-duplex.llave.galeria: $500.000 -> $530.000
-duplex.llave.pergola: $350.000 -> $371.000
+duplex.llave.cubiertos: $1.272.000
+duplex.llave.galeria: $550.000
+duplex.llave.pergola: $350.000
 
 === PREFABRICADO ===
-prefabricado.obraGris.cubiertos: $450.000 -> $477.000
-prefabricado.obraGris.galeria: $170.000 -> $180.200
-prefabricado.obraGris.pergola: $120.000 -> $127.200
+prefabricado.obraGris.cubiertos: $450.000 
+prefabricado.obraGris.galeria: $200.000
+prefabricado.obraGris.pergola: $120.000
 
-prefabricado.llave.cubiertos: $850.000 -> $901.000
-prefabricado.llave.galeria: $350.000 -> $371.000
-prefabricado.llave.pergola: $200.000 -> $212.000
+prefabricado.llave.cubiertos: $901.000
+prefabricado.llave.galeria: $400.000
+prefabricado.llave.pergola: $300.000
